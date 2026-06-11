@@ -87,6 +87,5 @@ document.querySelectorAll(".js-add-to-cart")
 
    addToCart(productId, quantity);
    updateCartQuantity();
-    
   });
 });
