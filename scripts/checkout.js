@@ -7,6 +7,9 @@ let cartSummaryHTML = '';
 cart.forEach((cartItem) => {
 
     const productId = cartItem.productId;
+    const ProductQuantity = cartItem.quantity;
+    const productQuantityContainer = document.querySelector(".js-return-to-home-link")
+    productQuantityContainer.innerHTML = Number(productQuantityContainer.innerHTML) + ProductQuantity;
 
     let matchingProduct;
 
